@@ -1,5 +1,8 @@
-# Eclipse Import Projects Plug-in
+# Eclipse Hybris Import Projects Plug-in
 
+As the hybris Project setup is quite bloody caused by the large number of eclipse imports, this plugin will help to import all extensions (which are currently active within the hybris project). Please keep in mind, to specify only the hybris root directory. The current version only works with a simple mechanism to identify project locations. 
+The Plugin is based on the excellent work of seeq.com to import projects. As the enhancement base plugin still i useful i will only extend there work.
+Original Description:
 This plug-in allows import of projects using an Eclipse command-line parameter. It is useful
 in situations where Maven is producing the .project files and Eclipse would ideally import/refresh
 them when launched.
@@ -9,7 +12,11 @@ them when launched.
 Place the com.seeq.eclipse.importprojects JAR file in the eclipse/plugins folder.
 
 ## Usage
+### Import hybris Projects
+The Plugin expects a config/localextensions.xml file within the hybris directory. You could import the project using the following command:
+`-importHybris <absolute hybris folder>` (E.g. `-importHybris /opt/hybris`)
 
+### Import any other Eclipse Project
 When launching Eclipse, add the `-import <root project folder>` command line parameter. This will
 cause Eclipse to recursively search the supplied folder for .project files and import them into
 the workspace. If they are already present in the workspace, they will be refreshed. The path supplied
@@ -50,7 +57,7 @@ You can debug this plugin from Eclipse using the Plugin Development Environment.
 
 MIT License
 
-Copyright (C) 2014 Seeq Corporation
+Copyright (C) 2014 Seeq Corporation 
 
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
@@ -58,3 +65,5 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+Extended by Jan Riewe

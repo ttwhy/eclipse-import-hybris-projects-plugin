@@ -1,4 +1,4 @@
-# Eclipse Hybris Import Projects Plug-in
+# Eclipse Import Hybris Projects Plug-in
 
 As the hybris Project setup is quite bloody caused by the large number of eclipse imports, this plugin will help to import all extensions (which are currently active within the hybris project). Please keep in mind, to specify only the hybris root directory. The current version only works with a simple mechanism to identify project locations. 
 The Plugin is based on the excellent work of seeq.com to import projects. As the enhancement base plugin still i useful i will only extend there work.
@@ -9,7 +9,7 @@ them when launched.
 
 ## Installation
 
-Place the com.seeq.eclipse.importprojects JAR file in the eclipse/plugins folder.
+Place the de.esync.eclipse.hybris.importhybrisprojects JAR file in the eclipse/plugins folder.
 
 ## Usage
 ### Import hybris Projects
@@ -66,4 +66,4 @@ The above copyright notice and this permission notice shall be included in all c
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-Extended by Jan Riewe
+Extended by Jan Riewe (esync)
